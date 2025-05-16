@@ -53,25 +53,26 @@ class BloodborneScraper:
         weapons = [] # Initialize an empty list to store weapon data
         soup = self.fetch_page("p/weapons.html") # Fetch the weapons page
         if soup:
-            expected_headers = ["Name", "Damage", "Durability", "Stats Needed", " Stat Bounses"]
+            expected_headers = ['image', 'name', 'damage', 'qs bullet use', 'durability', 'stats needed\nstat bonuses', 'special attack', 'availability', 'special note']
         tables = soup.find_all("table", {"class": "wiki-blog-table-sheader"}) # Find all tables with the class "wiki-blog-table-sheader"
         for table in tables: 
             header_row = table.find("tr") # Find the first row in the table
             if not header_row:
                 continue
-            headers = [th.text.strip() for th in header_row.find_all("th")] # Find all header cells in the row
+            headers = [th.text.strip().lower() for th in header_row.find_all("th")] # Find all header cells in the row
             # Check if the headers match the expected headers
-            if headers == expected_headers:
+            if headers[:len(expected_headers)] == expected_headers:
                 rows = table.find_all("tr") # Find all rows in the table
                 for row in rows[1:]:  # Skip header
                     cols = row.find_all("td") # Find all columns in the row
                     if len(cols) < 5: # Ensure there are enough columns
                         continue
                     weapon = {
-                        "name": cols[0].text.strip(),
-                        "base-damage": cols[1].text.strip(),
-                        "durability": cols[3].text.strip(),
-                        "stats-needed": cols[4].text.strip(),
+                        "name": cols[1].text.strip(),
+                        "damage": cols[2].text.strip(),
+                        "durability": cols[4].text.strip(),
+                        "stats needed\nstat bonuses": cols[5].text.strip(),
+                        "special attack": cols[6].text.strip(),
                     }
                     weapons.append(weapon)
                 break  # Stop after finding the correct table
