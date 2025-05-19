@@ -67,8 +67,10 @@ class BloodborneScraper:
                     cols = row.find_all("td") # Find all columns in the row
                     if len(cols) < 5: # Ensure there are enough columns
                         continue
+                    name_link = cols[1].find("a") # Find the first anchor tag in the second column
                     weapon = {
                         "name": cols[1].text.strip(),
+                        "link": name_link["href"] if name_link and name_link.has_attr("href") else None, # Extract the link if it exists
                         "damage": cols[2].text.strip(),
                         "durability": cols[4].text.strip(),
                         "stats needed\nstat bonuses": cols[5].text.strip(),
@@ -124,23 +126,23 @@ class BloodborneScraper:
                     # Extracting the different boss attributes from the wiki, in order to fill the 'bosses' list
                     boss = {
                         "name": cols[0].text.strip(),
-                        "location": cols[1].text.strip(),   
-                        "defenses": cols[2].text.strip(), # E.g., Physical, Blunt, Thrust, Blood, Arcane, Fire, Bolt
-                        "resistances": cols[3].text.strip(), # E.g., Slow Poison, Rapid Poison, Frenzy
-                        "bonuses": cols[4].text.strip(), # E.g., Beasts, Kin
-                        "drops": cols[5].text.strip() # E.g., Blood Echoes, Blood Vials, Quicksilver Bullets, Blood Gems, Caryll Runes
+                        "drops": cols[1].text.strip(),
+                        "HP": cols[2].text.strip(),
+                        "blood-echoes": cols[3].text.strip(),
+                        "location": cols[4].text.strip(),   
+                        "required": cols[6].text.strip() # E.g., Yes, No
                     }
                     bosses.append(boss)
         return bosses
 
-    def scrape_items(self):
+    def scrape_consumables(self):
         """
         Scrapes item data from the Bloodborne Wiki.
         
         :return: A list of dictionaries containing item data.
         """
-        items = [] # Initialize an empty list to store 'items' data
-        soup = self.fetch_page("p/items.html") # Fetch the items page
+        consumables = [] # Initialize an empty list to store 'consumables' data
+        soup = self.fetch_page("p/consumables.html") # Fetch the consumables page
         if soup:
             # Example: Find the table containing item data
             table = soup.find("table", {"class": "wiki_table"})
@@ -148,18 +150,16 @@ class BloodborneScraper:
                 rows = table.find_all("tr")
                 for row in rows[1:]:  # Skip the header row
                     cols = row.find_all("td")
-                    # Extracting the different item attributes from the wiki, in order to fill the 'items' list
+                    # Extracting the different item attributes from the wiki, in order to fill the 'consumables' list
                     item = {
-                        "name": cols[0].text.strip(),
-                        "type": cols[1].text.strip(), # E.g., Consumable, Hunter Tools, Key, Multiplayer, Caryll Runes
+                        "name": cols[1].text.strip(),
                         "effect": cols[2].text.strip(),
-                        "location": cols[3].text.strip(),
-                        "usage-type": cols[4].text.strip(), # E.g., Finite, Unlimited Use
-                        "num-held": cols[5].text.strip(), 
-                        "stored": cols[6].text.strip()
+                        "num-held": cols[3].text.strip(), # E.g., '-/10', '-/1', '-/20', '-/99', '-/3'
+                        "stored": cols[4].text.strip(), # E.g., '-/99', '-/-', '-/1', '-/600'
+                        "usage-type": cols[5].text.strip() # E.g., Finite, Unlimited Use
                     }
-                    items.append(item)
-        return items
+                    consumables.append(item)
+        return consumables
 
     def scrape_npcs(self):
         """

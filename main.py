@@ -49,21 +49,21 @@ def main():
         weapons_data = scraper.scrape_weapons()
         armor_data = scraper.scrape_armor()
         bosses_data = scraper.scrape_bosses()
-        items_data = scraper.scrape_items()
+        consumables_data = scraper.scrape_consumables()
         npcs_data = scraper.scrape_npcs()
 
         # Save data to JSON
         data_handler.save_to_json('weapons.json', weapons_data)
         data_handler.save_to_json('armor.json', armor_data)
         data_handler.save_to_json('bosses.json', bosses_data)
-        data_handler.save_to_json('items.json', items_data)
+        data_handler.save_to_json('items.json', consumables_data)
         data_handler.save_to_json('npcs.json', npcs_data)
 
         # Save data to CSV
         data_handler.save_to_csv('weapons.csv', weapons_data)
         data_handler.save_to_csv('armor.csv', armor_data)
         data_handler.save_to_csv('bosses.csv', bosses_data)
-        data_handler.save_to_csv('items.csv', items_data)
+        data_handler.save_to_csv('items.csv', consumables_data)
         data_handler.save_to_csv('npcs.csv', npcs_data)
 
         print("Data scraping and saving completed successfully.")
