@@ -113,26 +113,35 @@ class BloodborneScraper:
         
         :return: A list of dictionaries containing boss data.
         """
-        bosses = [] # Initialize an empty list to store 'bosses' data
-        soup = self.fetch_page("p/bosses.html") # Fetch the bosses page
-        
+        bosses = [] # Initialize an empty list to store weapon data
+        soup = self.fetch_page("p/bosses.html") # Fetch the weapons page
         if soup:
-            # Example: Find the table containing boss data
-            table = soup.find("table", {"class": "wiki_table"})
-            if table:
+            expected_headers = ['boss', 'drops', 'hp', 'blood echoes', 'location', 'interruptible', 'required']
+        tables = soup.find_all("table", {"class": "wiki-blog-table-sheader1"}) # Find all tables with the class "wiki-blog-table-sheader"
+        for table in tables: 
+            header_row = table.find("tr") # Find the first row in the table
+            if not header_row:
+                continue
+            headers = [th.text.strip().lower() for th in header_row.find_all("th")] # Find all header cells in the row
+            # Check if the headers match the expected headers
+            if headers[:len(expected_headers)] == expected_headers:
                 rows = table.find_all("tr") # Find all rows in the table
-                for row in rows[1:]:  # Skip the header row
+                for row in rows[1:]:  # Skip header
                     cols = row.find_all("td") # Find all columns in the row
-                    # Extracting the different boss attributes from the wiki, in order to fill the 'bosses' list
+                    if len(cols) < 6: # Ensure there are enough columns
+                        continue
+                    name_link = cols[1].find("a") # Find the first anchor tag in the second column
                     boss = {
                         "name": cols[0].text.strip(),
+                        "link": name_link["href"] if name_link and name_link.has_attr("href") else None, # Extract the link if it exists
                         "drops": cols[1].text.strip(),
                         "HP": cols[2].text.strip(),
                         "blood-echoes": cols[3].text.strip(),
-                        "location": cols[4].text.strip(),   
-                        "required": cols[6].text.strip() # E.g., Yes, No
+                        "location": cols[4].text.strip(),
+                        "required": cols[6].text.strip(),
                     }
                     bosses.append(boss)
+                break  # Stop after finding the correct table
         return bosses
 
     def scrape_consumables(self):
