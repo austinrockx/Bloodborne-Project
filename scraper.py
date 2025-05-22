@@ -174,7 +174,9 @@ class BloodborneScraper:
                     cols = row.find_all("td") # Find all columns in the row
                     if len(cols) < 6: # Ensure there are enough columns
                         continue
-                    name_link = cols[1].find("a") # Find the first anchor tag in the second column
+                    # Find the <a> tag inside a <strong> tag in the first column
+                    strong_tag = cols[0].find("strong") 
+                    name_link = strong_tag.find("a") if strong_tag else None 
                     boss = {
                         "name": cols[0].text.strip(),
                         "link": name_link["href"] if name_link and name_link.has_attr("href") else None, # Extract the link if it exists
@@ -185,7 +187,6 @@ class BloodborneScraper:
                         "required": cols[6].text.strip(),
                     }
                     bosses.append(boss)
-                break  # Stop after finding the correct table
         return bosses
     
     def scrape_consumables(self):
@@ -221,7 +222,6 @@ class BloodborneScraper:
                         "usage-type": cols[5].text.strip()
                     }
                     consumables.append(item)
-                break  # Stop after finding the correct table
         return consumables
 
     def scrape_npcs(self):
@@ -257,5 +257,4 @@ class BloodborneScraper:
                         "timezones": cols[5].text.strip()  # E.g., Day, Evening, Night, Blood Moon
                     }
                     npcs.append(npc)
-                break  # Stop after finding the correct table
         return npcs
