@@ -1,1 +1,162 @@
-[]
+[
+    {
+        "name": "Bare Fists / None",
+        "link": "https://www.bloodborne-wiki.com/2022/09/bare-fists.html",
+        "base-damage": "25",
+        "damage-type": "Physical",
+        "durability": "0",
+        "stats-needed": "- / - / - / -",
+        "stat-bonuses": "S / S / - / -",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Hunter Axe",
+        "link": "http://www.bloodborne-wiki.com/2015/03/hunters-axe.html",
+        "base-damage": "98",
+        "damage-type": "Phys./Blunt",
+        "durability": "250",
+        "stats-needed": "9 / 8 / - / -",
+        "stat-bonuses": "D / E / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Saw Cleaver",
+        "link": "http://www.bloodborne-wiki.com/2015/03/saw-cleaver.html",
+        "base-damage": "90",
+        "damage-type": "Phys.",
+        "durability": "200",
+        "stats-needed": "8 / 7 / - / -",
+        "stat-bonuses": "D / E / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Saw Spear",
+        "link": "http://www.bloodborne-wiki.com/2015/03/saw-spear.html",
+        "base-damage": "85",
+        "damage-type": "Phys./Thrust",
+        "durability": "200",
+        "stats-needed": "7 / 8 / - / -",
+        "stat-bonuses": "D / D / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Threaded Cane",
+        "link": "http://www.bloodborne-wiki.com/2015/03/threaded-cane.html",
+        "base-damage": "78",
+        "damage-type": "Phys./Thrust",
+        "durability": "200",
+        "stats-needed": "7 / 9 / - / -",
+        "stat-bonuses": "E / C / -/ D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Kirkhammer",
+        "link": "http://www.bloodborne-wiki.com/2015/03/kirkhammer.html",
+        "base-damage": "105",
+        "damage-type": "Phys./Thrust/Blunt",
+        "durability": "250",
+        "stats-needed": "16 / 10 / - / -",
+        "stat-bonuses": "C / E / -/ D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Rifle Spear",
+        "link": "http://www.bloodborne-wiki.com/2015/03/rifle-spear.html",
+        "base-damage": "85",
+        "damage-type": "Phys./Thrust/Blood",
+        "durability": "180",
+        "stats-needed": "10 / 11 / 9 / -",
+        "stat-bonuses": "E / D / D / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Stake Driver",
+        "link": "http://www.bloodborne-wiki.com/2015/03/stake-driver.html",
+        "base-damage": "85",
+        "damage-type": "Phys./Thrust/Blunt",
+        "durability": "200",
+        "stats-needed": "18 / 9 / - / -",
+        "stat-bonuses": "D / D / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Ludwig's Holy Blade",
+        "link": "http://www.bloodborne-wiki.com/2015/03/ludwigs-holy-blade.html",
+        "base-damage": "100",
+        "damage-type": "Phys./Thrust/Blunt",
+        "durability": "250",
+        "stats-needed": "16 / 12 / - / -",
+        "stat-bonuses": "D / D / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Blade of Mercy",
+        "link": "http://www.bloodborne-wiki.com/2015/03/warped-twinblades.html",
+        "base-damage": "60",
+        "damage-type": "Phys./Arc./Thrust",
+        "durability": "200",
+        "stats-needed": "7 / 11 / - / -",
+        "stat-bonuses": "- / C / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Tonitrus",
+        "link": "http://www.bloodborne-wiki.com/2015/03/tonitrus.html",
+        "base-damage": "80",
+        "damage-type": "Blunt/Bolt",
+        "durability": "100",
+        "stats-needed": "12 / 8 / - / -",
+        "stat-bonuses": "D / E / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Chikage",
+        "link": "http://www.bloodborne-wiki.com/2015/03/chikage.html",
+        "base-damage": "92",
+        "damage-type": "Phys./Thrust/Blood",
+        "durability": "120",
+        "stats-needed": "10 / 14 / 12 / -",
+        "stat-bonuses": "E / D / C / D",
+        "special attack": "- / 30 / 100 / 100"
+    },
+    {
+        "name": "Reiterpallasch",
+        "link": "http://www.bloodborne-wiki.com/2015/03/bayonet-reiterpallasch.html",
+        "base-damage": "75",
+        "damage-type": "Phys./Thrust/Blood",
+        "durability": "150",
+        "stats-needed": "8 / 12 / 10 / -",
+        "stat-bonuses": "E / C / E / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Logarius' Wheel",
+        "link": "http://www.bloodborne-wiki.com/2015/03/logarius-wheel.html",
+        "base-damage": "100",
+        "damage-type": "Blunt/Arc.",
+        "durability": "300",
+        "stats-needed": "20 / 12 / - / 10",
+        "stat-bonuses": "C / - / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Burial Blade",
+        "link": "http://www.bloodborne-wiki.com/2015/03/burial-blade.html",
+        "base-damage": "80",
+        "damage-type": "Phys./Arc./Thrust",
+        "durability": "200",
+        "stats-needed": "10 / 12 / - / -",
+        "stat-bonuses": "E / C / - / D",
+        "special attack": "- / - / 100 / 100"
+    },
+    {
+        "name": "Beast Claw",
+        "link": "http://www.bloodborne-wiki.com/2015/03/beast-claw.html",
+        "base-damage": "75",
+        "damage-type": "Phys.",
+        "durability": "180",
+        "stats-needed": "14 / 12 / - / -",
+        "stat-bonuses": "D / E/ - / D",
+        "special attack": "- / - / 90 / 100"
+    }
+]

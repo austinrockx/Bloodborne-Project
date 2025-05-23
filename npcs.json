@@ -1,1 +1,210 @@
-[]
+[
+    {
+        "name": "Adella, Nun of the Healing Church",
+        "link": "http://www.bloodborne-wiki.com/2015/03/adella.html",
+        "item": "Madman's Knowledge, \"Church Bow (Female)\", Blood of Adella",
+        "drop": "Oedon Writhe x1 [100%]",
+        "location": "Yahar'gul, Unseen Village Storeroom, Cathedral Ward Oedon Chapel",
+        "timezones": "Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Afflicted Beggar",
+        "link": "http://www.bloodborne-wiki.com/2015/03/blind-man.html",
+        "item": "Pungent Blood Cocktail, Beast Blood Pellets",
+        "drop": "Beast x1 [100%]",
+        "location": "Forbidden Woods Windmil Balconies, \nCathedral Ward Outside Oedon Chapel",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Alfred, Hunter of Vilebloods",
+        "link": "http://www.bloodborne-wiki.com/2015/03/alfred.html",
+        "item": "Fire Paper, \"Pray\", Wheel Hunter Badge, \"Church Bow (Male)\", \"Roar\", Radiance Caryll Rune",
+        "drop": "Wheel Hunter Badge [100%], Fire Paper x3 [100%]*, Radiance Caryll Rune [100%]*+ Blood Dreg x1 [100%] (Corruption)",
+        "location": "Cathedral Ward Lower Chapel, Cathedral Ward Forbidden Woods route, Forsaken Cainhurst Castle Queen's Chamber",
+        "timezones": "Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Annalise, Queen of Castle Cainhurst",
+        "link": "http://www.bloodborne-wiki.com/2015/03/annalise-queen-of-castle-cainhurst.html",
+        "item": "Cainhurst Badge, \"Respect\", Corruption Caryll Rune, \"Deep Respect\"",
+        "drop": "Queenly Flesh [100%]",
+        "location": "Forsaken Cainhurst Castle Queen's Chamber",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Arianna, Woman of Pleasure",
+        "link": "http://www.bloodborne-wiki.com/2015/03/arianna-woman-of-pleasure.html",
+        "item": "\"Curtsy\", Blood of Arianna, One Third Umbilical Cord",
+        "drop": "Arianna's Shoes [100%]",
+        "location": "Cathedral Ward Foggy Alley, \nCathedral Ward Oedon Chapel",
+        "timezones": "Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Blood Minister",
+        "link": "http://www.bloodborne-wiki.com/2015/03/blood-minister.html",
+        "item": "None",
+        "drop": "None",
+        "location": "Iosefka's Clinic Operating Room",
+        "timezones": "Day"
+    },
+    {
+        "name": "Doll",
+        "link": "http://www.bloodborne-wiki.com/2015/03/doll.html",
+        "item": "Tear Stone",
+        "drop": "None",
+        "location": "Hunter's Dream",
+        "timezones": "Day, Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Eileen the Crow",
+        "link": "http://www.bloodborne-wiki.com/2015/03/raven-hunter.html",
+        "item": "Bold Hunter's Mark, \"Shake Off Cape\", \"Shhh!\", \"Approval\", \"Wait\", Crow Hunter Badge, Hunter Rune",
+        "drop": "Crow Hunter Badge [100%]+ Blood Dreg x1 [100%] (Corruption)",
+        "location": "Central Yharnam Dry Docks, \nCentral Yharnam Tomb of Oedon, \nCathedral Ward outside of Oedon Chapel, \nCathedral Ward Grand Cathedral",
+        "timezones": "Day, Evening, Blood Moon"
+    },
+    {
+        "name": "Gehrman",
+        "link": "http://www.bloodborne-wiki.com/2015/03/gehrman.html",
+        "item": "None",
+        "drop": "None",
+        "location": "Hunter's Dream",
+        "timezones": "Day, Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Gilbert, Critically Ill Man",
+        "link": "http://www.bloodborne-wiki.com/2015/03/gilbert.html",
+        "item": "Flamesprayer",
+        "drop": "Clawmark Rune [100%]",
+        "location": "Central Yharnam Gilbert's house",
+        "timezones": "Day, Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Impostor Iosefka",
+        "link": "http://www.bloodborne-wiki.com/2015/07/impostor-iosefka.html",
+        "item": "Lead Elixir, Numbing Mists, Beast Blood Pellet, Blue Elixir",
+        "drop": "Oedon Writhe x1 [100%], \nOne Third of Umbilical Cord [100%]*",
+        "location": "Iosefka's Clinic Operating Room, \nIosefka's Clinic Upstairs Operating Room",
+        "timezones": "Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Iosefka",
+        "link": "http://www.bloodborne-wiki.com/2015/03/iosefka.html",
+        "item": "Iosefka's Blood Vial",
+        "drop": "None",
+        "location": "Iosefka's Clinic Operating Room",
+        "timezones": "Day"
+    },
+    {
+        "name": "Master Willem",
+        "link": "http://www.bloodborne-wiki.com/2015/04/master-willem.html",
+        "item": "None",
+        "drop": "Eye Rune [100%]",
+        "location": "Byrgenwerth Lunarium",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Oedon Chapel Dweller",
+        "link": "https://www.bloodborne-wiki.com/2015/03/Oedon-Chapel-Dweller.html",
+        "item": "\"Triumph\", Pebble",
+        "drop": "Formless Oedon x1 [100%]",
+        "location": "Cathedral Ward Oedon Chapel",
+        "timezones": "Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Bigoted Old Man",
+        "link": "http://www.bloodborne-wiki.com/2015/03/old-man.html",
+        "item": "None",
+        "drop": "Pungent Blood Cocktail x3 [100%]",
+        "location": "Cathedral Ward Foggy Alley, \nCathedral Ward Oedon Chapel",
+        "timezones": "Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Lonely Old Woman",
+        "link": "http://www.bloodborne-wiki.com/2015/03/old-woman.html",
+        "item": "Sedatives",
+        "drop": "Sedatives x1 [100%]",
+        "location": "Central Yharnam Canal Bridge, \nCathedral Ward Oedon Chapel",
+        "timezones": "Day, Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Patches the Spider",
+        "link": "http://www.bloodborne-wiki.com/2015/03/patches-spider.html",
+        "item": "Tonsil Stone, \"Beg for Life\", Anti-Clockwise Metamorphosis",
+        "drop": "Great One's Wisdom x1 [100%]",
+        "location": "Cathedral Ward Entrance of Yahar'gul, \nLecture Building 1F Patches' Lab, \nNightmare Frontier Lower Caves",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Retired Hunter Djura",
+        "link": "http://www.bloodborne-wiki.com/2015/03/old-hunter-gyula.html",
+        "item": "Powder Keg Hunter Badge, \"Brush off Dust\", Bold Hunter's Mark*",
+        "drop": "Powder Keg Hunter Badge x1 [100%]+ Blood Dreg x1 [100%] (Corruption)",
+        "location": "Old Yharnam Djura's Tower",
+        "timezones": "Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Young Girl and Older Sister",
+        "link": "http://www.bloodborne-wiki.com/2015/07/young-girl-and-older-sister.html",
+        "item": "Tiny Music Box, Red Messenger Ribbon, White Messenger Ribbon",
+        "drop": "None",
+        "location": "Central Yharnam Canal Residence",
+        "timezones": "Day, Evening, Night, Blood Moon"
+    },
+    {
+        "name": "Valtr, Master of the League",
+        "link": "http://www.bloodborne-wiki.com/2015/11/valtr-master-of-league.html",
+        "item": "Impurity, League Staff, \"League Oath\"",
+        "drop": "One-eyed Iron Helm x1 [100%]+ Blood Dreg x1 [100%] (Corruption)",
+        "location": "Forbidden Woods",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Brador, Church Assassin",
+        "link": "http://www.bloodborne-wiki.com/2015/11/brador.html",
+        "item": "None",
+        "drop": "Bloodletter [100%]+ Blood Dreg x1 [100%] (Corruption)",
+        "location": "Hunter's Nightmare",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Simon, Seeker of Secrets",
+        "link": "http://www.bloodborne-wiki.com/2015/11/simon.html",
+        "item": "Holy Moonlight Sword, Simon's Bowblade, Underground Cell Inner Chamber Key",
+        "drop": "Simon's Bowblade [100%]+ Blood Dreg x1 [100%] (Corruption)",
+        "location": "Hunter's Nightmare, Research Hall, Fishing Hamlet",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Adeline, Research Hall Patient",
+        "link": "http://www.bloodborne-wiki.com/2015/11/blood-saint-adeline.html",
+        "item": "Blood of Adeline, Balcony Key, Milkweed",
+        "drop": "Balcony Key x1 [100%]",
+        "location": "Research Hall",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Fishing Hamlet Priest",
+        "link": "http://www.bloodborne-wiki.com/2015/12/fishing-hamlet-priest.html",
+        "item": "Accursed Brew",
+        "drop": "None",
+        "location": "Fishing Hamlet",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Yamamura the Wanderer",
+        "link": "http://www.bloodborne-wiki.com/2015/11/yamamura-wanderer.html",
+        "item": "None",
+        "drop": "Yamamura Hunter Hat [100%], Khaki Haori [100%], Old Hunter Arm Bands [100%], Wine Hakama [100%]+ Blood Dreg x1 [100%] (Corruption)",
+        "location": "Hunter's Nightmare",
+        "timezones": "Night, Blood Moon"
+    },
+    {
+        "name": "Ludwig, the Holy Blade (Head)",
+        "link": "http://www.bloodborne-wiki.com/2016/02/ludwig-holy-blade-head.html",
+        "item": "Holy Moonlight Sword",
+        "drop": "Holy Moonlight Sword x1 [100%]",
+        "location": "Hunter's Nightmare",
+        "timezones": "Night, Blood Moon"
+    }
+]

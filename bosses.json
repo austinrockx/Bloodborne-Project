@@ -1,1 +1,200 @@
-[]
+[
+    {
+        "name": "Cleric Beast",
+        "link": "http://www.bloodborne-wiki.com/2015/03/cleric-beast.html",
+        "drops": "Sword Hunter Badge",
+        "HP": "3015",
+        "blood-echoes": "4000",
+        "location": "Central Yharnam Great Bridge",
+        "required": "No"
+    },
+    {
+        "name": "Father Gascoigne",
+        "link": "http://www.bloodborne-wiki.com/2015/03/father-gascoigne.html",
+        "drops": "Oedon Tomb Key",
+        "HP": "2031",
+        "blood-echoes": "3200",
+        "location": "Central Yharnam Tomb of Oedon",
+        "required": "Yes"
+    },
+    {
+        "name": "Blood-starved Beast",
+        "link": "http://www.bloodborne-wiki.com/2015/03/blood-starved-beast.html",
+        "drops": "Pthumeru Chalice",
+        "HP": "3470",
+        "blood-echoes": "6600",
+        "location": "Old Yharnam Church of the Good Chalice",
+        "required": "No"
+    },
+    {
+        "name": "The Witch of Hemwick",
+        "link": "http://www.bloodborne-wiki.com/2015/03/hemwick-witch.html",
+        "drops": "Bloodshot Eyeball x4",
+        "HP": "2611",
+        "blood-echoes": "11800",
+        "location": "Hemwick Charnel Lane Witch's Abode",
+        "required": "No"
+    },
+    {
+        "name": "Darkbeast Paarl",
+        "link": "http://www.bloodborne-wiki.com/2015/02/darkbeast-paarl.html",
+        "drops": "Spark Hunter Badge",
+        "HP": "4552",
+        "blood-echoes": "21000",
+        "location": "Old Yharnam Graveyard of the Darkbeast",
+        "required": "No"
+    },
+    {
+        "name": "Vicar Amelia",
+        "link": "http://www.bloodborne-wiki.com/2015/03/vicar-amelia.html",
+        "drops": "Gold Pendant",
+        "HP": "5367",
+        "blood-echoes": "15000",
+        "location": "Cathedral Ward Grand Cathedral",
+        "required": "Yes"
+    },
+    {
+        "name": "Shadow of Yharnam",
+        "link": "http://www.bloodborne-wiki.com/2015/03/shadow-of-yharnam.html",
+        "drops": "Blood Rapture",
+        "HP": "7993",
+        "blood-echoes": "18600",
+        "location": "Forbidden Woods Forbidden Grave",
+        "required": "Yes"
+    },
+    {
+        "name": "Martyr Logarius",
+        "link": "http://www.bloodborne-wiki.com/2015/03/martyr-logarius.html",
+        "drops": "Crown of Illusions",
+        "HP": "9081",
+        "blood-echoes": "25600",
+        "location": "Forsaken Cainhurst Castle Logarius' Seat",
+        "required": "No"
+    },
+    {
+        "name": "Amygdala",
+        "link": "http://www.bloodborne-wiki.com/2015/03/amygdala.html",
+        "drops": "Ailing Loran Chalice",
+        "HP": "6404",
+        "blood-echoes": "21000",
+        "location": "Nightmare Frontier Amygdala's Chamber",
+        "required": "No"
+    },
+    {
+        "name": "Rom, the Vacuous Spider",
+        "link": "http://www.bloodborne-wiki.com/2015/03/rom-vacuous-spider.html",
+        "drops": "Kin Coldblood (12)",
+        "HP": "4235",
+        "blood-echoes": "22600",
+        "location": "Moonside Lake",
+        "required": "Yes"
+    },
+    {
+        "name": "The One Reborn",
+        "link": "http://www.bloodborne-wiki.com/2015/03/the-one-reborn.html",
+        "drops": "Yellow Backbone x3",
+        "HP": "10375",
+        "blood-echoes": "33000",
+        "location": "Yahar'gul, Unseen Village Advent Plaza",
+        "required": "Yes"
+    },
+    {
+        "name": "Celestial Emissary",
+        "link": "http://www.bloodborne-wiki.com/2015/03/celestial-emissary.html",
+        "drops": "Communion",
+        "HP": "2764",
+        "blood-echoes": "22400",
+        "location": "Upper Cathedral Ward Lumenflower Gardens",
+        "required": "No"
+    },
+    {
+        "name": "Ebrietas, Daughter of the Cosmos",
+        "link": "http://www.bloodborne-wiki.com/2015/03/ebrietas-daughter-of-cosmos.html",
+        "drops": "Great Isz Chalice",
+        "HP": "12493",
+        "blood-echoes": "28800",
+        "location": "Altar of Despair",
+        "required": "No"
+    },
+    {
+        "name": "Micolash, Host of the Nightmare",
+        "link": "http://www.bloodborne-wiki.com/2015/03/micolash-host-of-nightmare.html",
+        "drops": "Mensis Cage",
+        "HP": "5250",
+        "blood-echoes": "48400",
+        "location": "Nightmare of Mensis Mergo's Loft: Middle",
+        "required": "Yes"
+    },
+    {
+        "name": "Mergo's Wet Nurse",
+        "link": "http://www.bloodborne-wiki.com/2015/03/mergos-wet-nurse.html",
+        "drops": "Third Umbilical Cord",
+        "HP": "14081",
+        "blood-echoes": "72000",
+        "location": "Nightmare of Mensis Mergo's Nurse's Lunarium",
+        "required": "Yes"
+    },
+    {
+        "name": "Gehrman, The First Hunter",
+        "link": "http://www.bloodborne-wiki.com/2015/04/gehrman-first-hunter.html",
+        "drops": "Old Hunter Badge",
+        "HP": "14293",
+        "blood-echoes": "128000",
+        "location": "Hunter's Dream Late Blood Moon",
+        "required": "No"
+    },
+    {
+        "name": "Moon Presence",
+        "link": "http://www.bloodborne-wiki.com/2015/03/moon-presence.html",
+        "drops": "None",
+        "HP": "8909",
+        "blood-echoes": "230000",
+        "location": "Hunter's Dream Late Blood Moon",
+        "required": "No"
+    },
+    {
+        "name": "Ludwig the Accursed / Holy Blade",
+        "link": "http://www.bloodborne-wiki.com/2015/10/ludwig.html",
+        "drops": "Guidance",
+        "HP": "16658",
+        "blood-echoes": "34500",
+        "location": "Hunter's Nightmare Underground Corpse Pile",
+        "required": "No"
+    },
+    {
+        "name": "Laurence, the First Vicar",
+        "link": "http://www.bloodborne-wiki.com/2015/11/laurence-first-vicar.html",
+        "drops": "Beast's Embrace",
+        "HP": "21243",
+        "blood-echoes": "29500",
+        "location": "Hunter's Nightmare Grand Cathedral",
+        "required": "No"
+    },
+    {
+        "name": "Living Failures",
+        "link": "http://www.bloodborne-wiki.com/2015/11/living-failures.html",
+        "drops": "Astral Clocktower Key",
+        "HP": "20646",
+        "blood-echoes": "22000",
+        "location": "Research Hall Lumenwood Garden",
+        "required": "No"
+    },
+    {
+        "name": "Lady Maria of the Astral Clocktower",
+        "link": "http://www.bloodborne-wiki.com/2015/11/lady-maria-of-astral-clocktower.html",
+        "drops": "Celestial Dial",
+        "HP": "14081",
+        "blood-echoes": "39000",
+        "location": "Research Hall Astral Clocktower",
+        "required": "No"
+    },
+    {
+        "name": "Orphan of Kos",
+        "link": "http://www.bloodborne-wiki.com/2015/11/orphan-of-kos.html",
+        "drops": "Kos Parasite",
+        "HP": "19216",
+        "blood-echoes": "60000",
+        "location": "Fishing Hamlet",
+        "required": "No"
+    }
+]

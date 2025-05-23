@@ -1,1 +1,370 @@
-[]
+[
+    {
+        "name": "Antidote",
+        "link": "http://www.bloodborne-wiki.com/2015/03/antidote.html",
+        "effect": "Remove poison build-up and heal the slow-poisoning status",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Beast Blood Pellet",
+        "link": "http://www.bloodborne-wiki.com/2015/03/beast-blood-pellet.html",
+        "effect": "Increase ATK powerDecrease DEF [60 seconds]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Blood of Adella",
+        "link": "http://www.bloodborne-wiki.com/2015/03/blood-of-adella.html",
+        "effect": "Heal 25% of HPGradual heal [20 seconds]",
+        "num-held": "- / 1",
+        "stored": "- / -",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Blood of Arianna",
+        "link": "http://www.bloodborne-wiki.com/2015/03/blood-of-arianna.html",
+        "effect": "Heal 25% of HPIncrease stamina regeneration [20 seconds]",
+        "num-held": "- / 1",
+        "stored": "- / -",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Blood Vial",
+        "link": "http://www.bloodborne-wiki.com/2015/03/blood-vial.html",
+        "effect": "Heal 40% of HP",
+        "num-held": "- / 20",
+        "stored": "- / 600",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Great One's Wisdom",
+        "link": "http://www.bloodborne-wiki.com/2015/03/great-ones-wisdom.html",
+        "effect": "Gain +2 Insight",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Iosefka's Blood Vial",
+        "link": "http://www.bloodborne-wiki.com/2015/03/iosefkas-blood-vial.html",
+        "effect": "Restore 70% of HP",
+        "num-held": "- / 1",
+        "stored": "- / -",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Madman's Knowledge",
+        "link": "http://www.bloodborne-wiki.com/2015/03/madmans-knowledge.html",
+        "effect": "Gain +1 Insight",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Sedative",
+        "link": "http://www.bloodborne-wiki.com/2015/03/sedative.html",
+        "effect": "Removes Frenzy build-upRemoves Beasthood build-up",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Third Umbilical Cord",
+        "link": "http://www.bloodborne-wiki.com/2015/03/third-umbilical-cord.html",
+        "effect": "Gain +3 InsightUnlocks true final boss",
+        "num-held": "- / 1",
+        "stored": "- / -",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Blood of AdelineDLC",
+        "link": "http://www.bloodborne-wiki.com/2015/11/blood-of-adeline.html",
+        "effect": "Restore 50% of total HP and gradually heal for 10 seconds",
+        "num-held": "- / 1",
+        "stored": "- / -",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Bolt Paper",
+        "link": "http://www.bloodborne-wiki.com/2015/03/bolt-paper.html",
+        "effect": "Add 80 Bolt DMG to every ATK [right-hand weapons]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Bone Marrow Ash",
+        "link": "http://www.bloodborne-wiki.com/2015/03/bone-marrow-ash.html",
+        "effect": "Increase power of QS Bullet [Left-Hand Firearms][1 Shot / 60 seconds]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Fire Paper",
+        "link": "http://www.bloodborne-wiki.com/2015/03/fire-paper.html",
+        "effect": "Add 80 Fire DMG to every ATK [right-hand weapons][60 seconds]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Lead Elixir",
+        "link": "http://www.bloodborne-wiki.com/2015/03/lead-elixir.html",
+        "effect": "Grant super armor in cost of slow movement [30 seconds]",
+        "num-held": "- / 3",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Molotov Cocktail",
+        "link": "http://www.bloodborne-wiki.com/2015/03/firebomb.html",
+        "effect": "Fire DMG / 20 Armor DMG",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Oil Urn",
+        "link": "http://www.bloodborne-wiki.com/2015/03/oil-urn.html",
+        "effect": "Increase Fire DMG [~x2] hit target will take",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Pebble",
+        "link": "http://www.bloodborne-wiki.com/2015/03/pebble.html",
+        "effect": "Round pebbles that can be thrown at targets",
+        "num-held": "- / 20",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Poison Knife",
+        "link": "http://www.bloodborne-wiki.com/2015/03/poison-knife.html",
+        "effect": "Deal Phys. DMG and build-up Slow Poison",
+        "num-held": "- / 20",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Quicksilver Bullets",
+        "link": "http://www.bloodborne-wiki.com/2015/03/quicksilver-bullets.html",
+        "effect": "Ammunition for firearms / Arcane Items",
+        "num-held": "- / 20",
+        "stored": "- / 600",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Rope Molotov Cocktail",
+        "link": "http://www.bloodborne-wiki.com/2015/03/rope-molotov-cocktail.html",
+        "effect": "Fire DMG / 20 Armor DMG[thrown behind]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Shaman Bone Blade",
+        "link": "http://www.bloodborne-wiki.com/2015/03/shaman-bone-blade.html",
+        "effect": "Hit enemy will ATK other enemies[duration ~15 seconds]",
+        "num-held": "- / 3",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Throwing Knife",
+        "link": "http://www.bloodborne-wiki.com/2015/03/throwing-knife.html",
+        "effect": "Deal Phys. DMG and 20 Armor DMG",
+        "num-held": "- / 20",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Delayed MolotovDLC",
+        "link": "http://www.bloodborne-wiki.com/2015/11/delayed-molotov.html",
+        "effect": "Fire DMG / 20 Armor DMG",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Delayed Rope MolotovDLC",
+        "link": "http://www.bloodborne-wiki.com/2015/11/delayed-rope-molotov.html",
+        "effect": "Fire DMG / 20 Armor DMG[thrown behind]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Coldblood Dew(1), (2), (3)",
+        "link": "http://www.bloodborne-wiki.com/2015/03/coldblood-dew.html",
+        "effect": "(1) Gain Blood Echoes +350(2) Gain Blood Echoes +500(3) Gain Blood Echoes +1000",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Thick Coldblood(4), (5), (6)",
+        "link": "http://www.bloodborne-wiki.com/2015/03/thick-coldblood.html",
+        "effect": "(4) Gain Blood Echoes +1200(5) Gain Blood Echoes +1500(6) Gain Blood Echoes +1800",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Frenzied Coldblood (7), (8), (9)",
+        "link": "http://www.bloodborne-wiki.com/2015/03/frenzied-coldblood.html",
+        "effect": "(7) Gain Blood Echoes +2000(8) Gain Blood Echoes +3000(9) Gain Blood Echoes +5000",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Kin Coldblood(10), (11), (12)",
+        "link": "http://www.bloodborne-wiki.com/2015/03/kin-coldblood.html",
+        "effect": "(10) Gain Blood Echoes +8000(11) Gain Blood Echoes +10000(12) Gain Blood Echoes +20000",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Great One Coldblood",
+        "link": "http://www.bloodborne-wiki.com/2015/04/great-one-coldblood.html",
+        "effect": "Gain Blood Echoes +40000",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Old Great One Coldblood",
+        "link": "http://www.bloodborne-wiki.com/2015/08/old-great-one-coldblood.html",
+        "effect": "Gain Blood Echoes +50000",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Revered Great One Coldblood",
+        "link": "http://www.bloodborne-wiki.com/2017/05/revered-great-one-coldblood.html",
+        "effect": "Gain Blood Echoes +100000",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Blood Dreg",
+        "link": "http://www.bloodborne-wiki.com/2015/04/blood-dreg.html",
+        "effect": "Gain +1 InsightOffer to Annalise",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Blue Elixir",
+        "link": "http://www.bloodborne-wiki.com/2015/03/blue-elixir.html",
+        "effect": "Harder to detect by enemies [30 seconds]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Bold Hunter's Mark",
+        "link": "http://www.bloodborne-wiki.com/2015/03/bold-hunters-mark.html",
+        "effect": "Return to last rested Lamp [takes ~3 seconds], Lose no Blood Echoes",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Gold Pendant",
+        "link": "http://www.bloodborne-wiki.com/2015/03/gold-pendant.html",
+        "effect": "Obtain Gold Blood Gem [radial]",
+        "num-held": "- / 1",
+        "stored": "- / 1",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Hand Lantern",
+        "link": "http://www.bloodborne-wiki.com/2015/03/hand-lantern.html",
+        "effect": "Attach lantern to the waist",
+        "num-held": "- / 1",
+        "stored": "- / 99",
+        "usage-type": "Unlimited Use"
+    },
+    {
+        "name": "Hunter's Mark",
+        "link": "http://www.bloodborne-wiki.com/2015/03/hunters-mark.html",
+        "effect": "Return to last rested Lamp [takes ~3 seconds], Lose Blood Echoes",
+        "num-held": "- / 1",
+        "stored": "- / -",
+        "usage-type": "Unlimited Use"
+    },
+    {
+        "name": "Monocular",
+        "link": "http://www.bloodborne-wiki.com/2015/03/monocular.html",
+        "effect": "Zoom the camera",
+        "num-held": "- / 1",
+        "stored": "- / 99",
+        "usage-type": "Unlimited Use"
+    },
+    {
+        "name": "Numbing Mist",
+        "link": "http://www.bloodborne-wiki.com/2015/03/numbing-mist.html",
+        "effect": "Blocks healing effects [30 seconds]",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Pungent Blood Cocktail",
+        "link": "http://www.bloodborne-wiki.com/2015/03/pungent-blood-cocktail.html",
+        "effect": "Attract certain enemies",
+        "num-held": "- / 10",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Red Jeweled Brooch",
+        "link": "http://www.bloodborne-wiki.com/2015/03/red-jeweled-brooch.html",
+        "effect": "Obtain Red Blood Gem [droplet]",
+        "num-held": "- / 1",
+        "stored": "- / 1",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Shining Coins",
+        "link": "http://www.bloodborne-wiki.com/2015/03/shining-coins.html",
+        "effect": "Mark the paths",
+        "num-held": "- / 99",
+        "stored": "- / 99",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Tear Stone",
+        "link": "http://www.bloodborne-wiki.com/2015/03/tear-stone.html",
+        "effect": "Obtain Tear Blood Gem [droplet]",
+        "num-held": "- / 1",
+        "stored": "- / 1",
+        "usage-type": "Finite"
+    },
+    {
+        "name": "Tiny Music Box",
+        "link": "http://www.bloodborne-wiki.com/2015/03/tiny-music-box.html",
+        "effect": "Play Music Box",
+        "num-held": "- / 1",
+        "stored": "- / 99",
+        "usage-type": "Unlimited Use"
+    },
+    {
+        "name": "Vermin",
+        "link": "http://www.bloodborne-wiki.com/2015/11/vermin.html",
+        "effect": "Use to gain +1 rank in League's leaderboard",
+        "num-held": "- / 99",
+        "stored": "- / 600",
+        "usage-type": "Finite"
+    }
+]

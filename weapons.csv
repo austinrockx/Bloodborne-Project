@@ -1,0 +1,17 @@
+name,link,base-damage,damage-type,durability,stats-needed,stat-bonuses,special attack
+Bare Fists / None,https://www.bloodborne-wiki.com/2022/09/bare-fists.html,25,Physical,0,- / - / - / -,S / S / - / -,- / - / 100 / 100
+Hunter Axe,http://www.bloodborne-wiki.com/2015/03/hunters-axe.html,98,Phys./Blunt,250,9 / 8 / - / -,D / E / - / D,- / - / 100 / 100
+Saw Cleaver,http://www.bloodborne-wiki.com/2015/03/saw-cleaver.html,90,Phys.,200,8 / 7 / - / -,D / E / - / D,- / - / 100 / 100
+Saw Spear,http://www.bloodborne-wiki.com/2015/03/saw-spear.html,85,Phys./Thrust,200,7 / 8 / - / -,D / D / - / D,- / - / 100 / 100
+Threaded Cane,http://www.bloodborne-wiki.com/2015/03/threaded-cane.html,78,Phys./Thrust,200,7 / 9 / - / -,E / C / -/ D,- / - / 100 / 100
+Kirkhammer,http://www.bloodborne-wiki.com/2015/03/kirkhammer.html,105,Phys./Thrust/Blunt,250,16 / 10 / - / -,C / E / -/ D,- / - / 100 / 100
+Rifle Spear,http://www.bloodborne-wiki.com/2015/03/rifle-spear.html,85,Phys./Thrust/Blood,180,10 / 11 / 9 / -,E / D / D / D,- / - / 100 / 100
+Stake Driver,http://www.bloodborne-wiki.com/2015/03/stake-driver.html,85,Phys./Thrust/Blunt,200,18 / 9 / - / -,D / D / - / D,- / - / 100 / 100
+Ludwig's Holy Blade,http://www.bloodborne-wiki.com/2015/03/ludwigs-holy-blade.html,100,Phys./Thrust/Blunt,250,16 / 12 / - / -,D / D / - / D,- / - / 100 / 100
+Blade of Mercy,http://www.bloodborne-wiki.com/2015/03/warped-twinblades.html,60,Phys./Arc./Thrust,200,7 / 11 / - / -,- / C / - / D,- / - / 100 / 100
+Tonitrus,http://www.bloodborne-wiki.com/2015/03/tonitrus.html,80,Blunt/Bolt,100,12 / 8 / - / -,D / E / - / D,- / - / 100 / 100
+Chikage,http://www.bloodborne-wiki.com/2015/03/chikage.html,92,Phys./Thrust/Blood,120,10 / 14 / 12 / -,E / D / C / D,- / 30 / 100 / 100
+Reiterpallasch,http://www.bloodborne-wiki.com/2015/03/bayonet-reiterpallasch.html,75,Phys./Thrust/Blood,150,8 / 12 / 10 / -,E / C / E / D,- / - / 100 / 100
+Logarius' Wheel,http://www.bloodborne-wiki.com/2015/03/logarius-wheel.html,100,Blunt/Arc.,300,20 / 12 / - / 10,C / - / - / D,- / - / 100 / 100
+Burial Blade,http://www.bloodborne-wiki.com/2015/03/burial-blade.html,80,Phys./Arc./Thrust,200,10 / 12 / - / -,E / C / - / D,- / - / 100 / 100
+Beast Claw,http://www.bloodborne-wiki.com/2015/03/beast-claw.html,75,Phys.,180,14 / 12 / - / -,D / E/ - / D,- / - / 90 / 100

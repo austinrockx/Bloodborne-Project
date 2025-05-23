@@ -36,6 +36,7 @@ import os # Provides functions for interacting with the operating system, such a
 # Import your custom modules
 from scraper import BloodborneScraper # Custom module for scraping data from the Bloodborne Wiki.
 from data_handler import DataHandler  # Custom module for saving the scraped data into JSON and CSV formats.
+from models import Weapon, Armor, Boss, NPC, Item # Custom data models for representing different entities in the game.
 
 # Main function to orchestrate the scraping and saving of data
 def main():
@@ -51,6 +52,20 @@ def main():
         bosses_data = scraper.scrape_bosses()
         consumables_data = scraper.scrape_consumables()
         npcs_data = scraper.scrape_npcs()
+        
+        # Convert dicts to class instances
+        weapons = [Weapon.from_dict(w) for w in weapons_data]
+        armor = [Armor.from_dict(a) for a in armor_data]
+        bosses = [Boss.from_dict(b) for b in bosses_data]
+        items = [Item.from_dict(i) for i in consumables_data]
+        npcs = [NPC.from_dict(n) for n in npcs_data]
+
+        # Example: Display info for the first weapon, armor, boss, item, and npc
+        if weapons: weapons[0].display_info()
+        if armor: armor[0].display_info()
+        if bosses: bosses[0].display_info()
+        if items: items[0].display_info()
+        if npcs: npcs[0].display_info()
 
         # Save data to JSON
         data_handler.save_to_json('weapons.json', weapons_data)
