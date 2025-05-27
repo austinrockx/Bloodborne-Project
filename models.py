@@ -1,4 +1,23 @@
-from dataclasses import dataclass
+"""
+Bloodborne Wiki Data Models
+---------------------------
+This module defines dataclasses for Bloodborne entities, including Weapon, Armor, Boss, NPC, and Item.
+Each class encapsulates the attributes and behaviors of its respective entity, provides a display_info() 
+method for pretty-printing, and a from_dict() classmethod for easy instantiation from scraped data.
+
+Features:
+- Object-oriented representation of Bloodborne data entities.
+- Methods for displaying entity information in a readable format.
+- Class methods for constructing objects from dictionaries.
+
+Modules Used:
+- dataclasses: For concise and readable class definitions.
+
+Author: Austin Bennett
+Date: 2025-05-23
+"""
+
+from dataclasses import dataclass # Import dataclass decorator for concise class definitions
 
 @dataclass
 class Weapon:
@@ -12,10 +31,12 @@ class Weapon:
     special_attack: str
 
     def display_info(self):
+        # Print a summary of the weapon's key stats
         print(f"Weapon: {self.name} | Damage: {self.base_damage} ({self.damage_type})")
 
     @classmethod
     def from_dict(cls, data):
+        # Create a Weapon instance from a dictionary
         return cls(
             name=data.get("name", ""),
             link=data.get("link", ""),
@@ -44,10 +65,12 @@ class Armor:
     beasthood: str
 
     def display_info(self):
+        # Print a summary of the armor set's key stats
         print(f"Armor Set: {self.set} | Physical: {self.physical_defense}")
 
     @classmethod
     def from_dict(cls, data):
+        # Create an Armor instance from a dictionary
         return cls(
             set=data.get("set", ""),
             link=data.get("link", ""),
@@ -75,10 +98,12 @@ class Boss:
     required: str
 
     def display_info(self):
+        # Print a summary of the boss's key stats
         print(f"Boss: {self.name} | HP: {self.HP} | Location: {self.location}")
 
     @classmethod
     def from_dict(cls, data):
+        # Create a Boss instance from a dictionary
         return cls(
             name=data.get("name", ""),
             link=data.get("link", ""),
@@ -99,10 +124,12 @@ class NPC:
     timezones: str
 
     def display_info(self):
+        # Print a summary of the NPC's key stats
         print(f"NPC: {self.name} | Location: {self.location}")
 
     @classmethod
     def from_dict(cls, data):
+        # Create an NPC instance from a dictionary
         return cls(
             name=data.get("name", ""),
             link=data.get("link", ""),
@@ -122,10 +149,12 @@ class Item:
     usage_type: str
 
     def display_info(self):
+        # Print a summary of the item's key stats
         print(f"Item: {self.name} | Effect: {self.effect}")
 
     @classmethod
     def from_dict(cls, data):
+        # Create an Item instance from a dictionary
         return cls(
             name=data.get("name", ""),
             link=data.get("link", ""),
