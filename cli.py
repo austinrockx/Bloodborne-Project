@@ -26,7 +26,10 @@ from scraper import BloodborneScraper # Import the scraper for Bloodborne data
 from collections import Counter # Import Counter for counting occurrences in data
 
 def load_data():
-    # Load data from JSON files using DataHandler
+    """
+    Loads all entity data from JSON files using the DataHandler.
+    Returns lists of dictionaries for weapons, armor, bosses, items, and npcs.
+    """
     data_handler = DataHandler()
     weapons = data_handler.load_from_json('weapons.json')
     armor = data_handler.load_from_json('armor.json')
@@ -35,32 +38,29 @@ def load_data():
     npcs = data_handler.load_from_json('npcs.json')
     return weapons, armor, bosses, items, npcs
 
-# Function to search by name in a list of dictionaries
 def search_by_name(data, name_key="name"):
-    # Prompt user for a search query and filter data by name
+    """
+    Prompts the user for a search query and returns a list of entries
+    whose 'name' field contains the query (case-insensitive).
+    Prints a numbered list of matching entries.
+    """
     query = input("Enter name to search: ").lower()
-    results = [d for d in data if query in d[name_key].lower()]
+    results = [d for d in data if query in d.get(name_key, "").lower()]
     for i, entry in enumerate(results):
-        print(f"{i+1}. {entry[name_key]}")
+        print(f"{i+1}. {entry.get(name_key, '')}")
     return results
 
-# Function to search across all entities
-def search_all(weapons, armor, bosses, items, npcs):
-    query = input("Enter name to search across all entities: ").lower()
-    for label, data in [("Weapon", weapons), ("Armor", armor), ("Boss", bosses), ("Item", items), ("NPC", npcs)]:
-        matches = [d for d in data if query in d["name"].lower()]
-        for m in matches:
-            print(f"{label}: {m['name']}")
-
-# Function to display details of a selected item
 def show_details(results, model_cls):
+    """
+    Prompts the user to select an entry from the results list and displays
+    detailed information using the model's display_info() method.
+    """
     if not results:
         print("No results found.")
         return
     try:
         idx = int(input("Enter the number of the entry to view details: ")) - 1
         if 0 <= idx < len(results):
-            # Convert dict to model instance and display info
             obj = model_cls.from_dict(results[idx])
             obj.display_info()
         else:
@@ -68,8 +68,11 @@ def show_details(results, model_cls):
     except ValueError:
         print("Please enter a valid number.")
 
-# Function to export results to JSON or CSV
 def export_results(results, filename, data_handler):
+    """
+    Exports the provided results to a JSON or CSV file.
+    Prompts the user for the desired format and filename.
+    """
     if not results:
         print("No data to export.")
         return
@@ -83,18 +86,54 @@ def export_results(results, filename, data_handler):
     else:
         print("Unknown format.")
 
-# Function to group weapons by damage type and count them
-def group_weapons_by_damage_type(weapons):
-    types = [w.get("damage-type", "Unknown") for w in weapons]
-    counts = Counter(types)
-    for dtype, count in counts.items():
-        print(f"{dtype}: {count} weapons")
+def advanced_filter(weapons, armor, bosses, items, npcs):
+    """
+    Allows the user to filter any entity type by a specific field and value.
+    Prompts for entity type, field, and value, then displays matching results.
+    """
+    entity_map = {
+        "weapon": (weapons, Weapon),
+        "armor": (armor, Armor),
+        "boss": (bosses, Boss),
+        "item": (items, Item),
+        "npc": (npcs, NPC)
+    }
+    print("Entities: weapon, armor, boss, item, npc")
+    entity = input("Which entity do you want to filter? ").strip().lower()
+    if entity not in entity_map:
+        print("Unknown entity.")
+        return
 
-# Function to display detailed information about a selected item
+    data, model_cls = entity_map[entity]
+    if not data:
+        print(f"No data loaded for {entity}s.")
+        return
+
+    print("Available fields:")
+    for key in data[0].keys():
+        print(f"- {key}")
+    field = input("Enter the field to filter by: ").strip()
+    value = input("Enter the value to search for: ").strip().lower()
+
+    results = [d for d in data if field in d and value in str(d[field]).lower()]
+    if results:
+        print(f"\nFound {len(results)} result(s):")
+        for i, entry in enumerate(results):
+            print(f"{i+1}. {entry.get('name', entry.get(field, 'No Name'))}")
+        show_details(results, model_cls)
+    else:
+        print("No results found.")
+
 def main_menu():
-    # Main CLI loop for user interaction
+    """
+    Main CLI loop. Presents the user with options to search, filter, display,
+    and export data for all Bloodborne entities.
+    """
     weapons, armor, bosses, items, npcs = load_data()
     data_handler = DataHandler()
+    last_results = []
+    last_model_cls = None
+
     while True:
         print("\nBloodborne Data CLI")
         print("1. Search Weapons")
@@ -106,15 +145,36 @@ def main_menu():
         print("7. Advanced Filter/Search")
         print("8. Exit")
         choice = input("Choose an option: ")
+
         if choice == "1":
-            results = search_by_name(weapons)
-            show_details(results, Weapon)
+            last_results = search_by_name(weapons)
+            last_model_cls = Weapon
+            show_details(last_results, Weapon)
         elif choice == "2":
-            results = search_by_name(bosses)
-            show_details(results, Boss)
+            last_results = search_by_name(armor)
+            last_model_cls = Armor
+            show_details(last_results, Armor)
+        elif choice == "3":
+            last_results = search_by_name(bosses)
+            last_model_cls = Boss
+            show_details(last_results, Boss)
         elif choice == "4":
-            export_results(results, "filtered_results", data_handler)
+            last_results = search_by_name(items)
+            last_model_cls = Item
+            show_details(last_results, Item)
         elif choice == "5":
+            last_results = search_by_name(npcs)
+            last_model_cls = NPC
+            show_details(last_results, NPC)
+        elif choice == "6":
+            if last_results:
+                export_results(last_results, "filtered_results", data_handler)
+            else:
+                print("No previous search results to export.")
+        elif choice == "7":
+            advanced_filter(weapons, armor, bosses, items, npcs)
+        elif choice == "8":
+            print("Goodbye!")
             break
         else:
             print("Invalid choice.")
