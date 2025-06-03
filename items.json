@@ -10,7 +10,7 @@
     {
         "name": "Beast Blood Pellet",
         "link": "http://www.bloodborne-wiki.com/2015/03/beast-blood-pellet.html",
-        "effect": "Increase ATK powerDecrease DEF [60 seconds]",
+        "effect": "Increase ATK power - Decrease DEF [60 seconds]",
         "num-held": "- / 10",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -18,7 +18,7 @@
     {
         "name": "Blood of Adella",
         "link": "http://www.bloodborne-wiki.com/2015/03/blood-of-adella.html",
-        "effect": "Heal 25% of HPGradual heal [20 seconds]",
+        "effect": "Heal 25% of HP - Gradual heal [20 seconds]",
         "num-held": "- / 1",
         "stored": "- / -",
         "usage-type": "Finite"
@@ -26,7 +26,7 @@
     {
         "name": "Blood of Arianna",
         "link": "http://www.bloodborne-wiki.com/2015/03/blood-of-arianna.html",
-        "effect": "Heal 25% of HPIncrease stamina regeneration [20 seconds]",
+        "effect": "Heal 25% of HP - Increase stamina regeneration [20 seconds]",
         "num-held": "- / 1",
         "stored": "- / -",
         "usage-type": "Finite"
@@ -66,7 +66,7 @@
     {
         "name": "Sedative",
         "link": "http://www.bloodborne-wiki.com/2015/03/sedative.html",
-        "effect": "Removes Frenzy build-upRemoves Beasthood build-up",
+        "effect": "Removes Frenzy build-up - Removes Beasthood build-up",
         "num-held": "- / 10",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -74,13 +74,13 @@
     {
         "name": "Third Umbilical Cord",
         "link": "http://www.bloodborne-wiki.com/2015/03/third-umbilical-cord.html",
-        "effect": "Gain +3 InsightUnlocks true final boss",
+        "effect": "Gain +3 Insight - Unlocks true final boss",
         "num-held": "- / 1",
         "stored": "- / -",
         "usage-type": "Finite"
     },
     {
-        "name": "Blood of AdelineDLC",
+        "name": "Blood of Adeline DLC",
         "link": "http://www.bloodborne-wiki.com/2015/11/blood-of-adeline.html",
         "effect": "Restore 50% of total HP and gradually heal for 10 seconds",
         "num-held": "- / 1",
@@ -98,7 +98,7 @@
     {
         "name": "Bone Marrow Ash",
         "link": "http://www.bloodborne-wiki.com/2015/03/bone-marrow-ash.html",
-        "effect": "Increase power of QS Bullet [Left-Hand Firearms][1 Shot / 60 seconds]",
+        "effect": "Increase power of QS Bullet [Left-Hand Firearms] [1 Shot / 60 seconds]",
         "num-held": "- / 10",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -106,7 +106,7 @@
     {
         "name": "Fire Paper",
         "link": "http://www.bloodborne-wiki.com/2015/03/fire-paper.html",
-        "effect": "Add 80 Fire DMG to every ATK [right-hand weapons][60 seconds]",
+        "effect": "Add 80 Fire DMG to every ATK [right-hand weapons] [60 seconds]",
         "num-held": "- / 10",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -162,7 +162,7 @@
     {
         "name": "Rope Molotov Cocktail",
         "link": "http://www.bloodborne-wiki.com/2015/03/rope-molotov-cocktail.html",
-        "effect": "Fire DMG / 20 Armor DMG[thrown behind]",
+        "effect": "Fire DMG / 20 Armor DMG [thrown behind]",
         "num-held": "- / 10",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -170,7 +170,7 @@
     {
         "name": "Shaman Bone Blade",
         "link": "http://www.bloodborne-wiki.com/2015/03/shaman-bone-blade.html",
-        "effect": "Hit enemy will ATK other enemies[duration ~15 seconds]",
+        "effect": "Hit enemy will ATK other enemies [duration ~15 seconds]",
         "num-held": "- / 3",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -184,7 +184,7 @@
         "usage-type": "Finite"
     },
     {
-        "name": "Delayed MolotovDLC",
+        "name": "Delayed Molotov DLC",
         "link": "http://www.bloodborne-wiki.com/2015/11/delayed-molotov.html",
         "effect": "Fire DMG / 20 Armor DMG",
         "num-held": "- / 10",
@@ -192,7 +192,7 @@
         "usage-type": "Finite"
     },
     {
-        "name": "Delayed Rope MolotovDLC",
+        "name": "Delayed Rope Molotov DLC",
         "link": "http://www.bloodborne-wiki.com/2015/11/delayed-rope-molotov.html",
         "effect": "Fire DMG / 20 Armor DMG[thrown behind]",
         "num-held": "- / 10",
@@ -200,17 +200,17 @@
         "usage-type": "Finite"
     },
     {
-        "name": "Coldblood Dew(1), (2), (3)",
+        "name": "Coldblood Dew (1), (2), (3)",
         "link": "http://www.bloodborne-wiki.com/2015/03/coldblood-dew.html",
-        "effect": "(1) Gain Blood Echoes +350(2) Gain Blood Echoes +500(3) Gain Blood Echoes +1000",
+        "effect": "(1) Gain Blood Echoes +350 - (2) Gain Blood Echoes +500 - (3) Gain Blood Echoes +1000",
         "num-held": "- / 99",
         "stored": "- / 99",
         "usage-type": "Finite"
     },
     {
-        "name": "Thick Coldblood(4), (5), (6)",
+        "name": "Thick Coldblood (4), (5), (6)",
         "link": "http://www.bloodborne-wiki.com/2015/03/thick-coldblood.html",
-        "effect": "(4) Gain Blood Echoes +1200(5) Gain Blood Echoes +1500(6) Gain Blood Echoes +1800",
+        "effect": "(4) Gain Blood Echoes +1200 - (5) Gain Blood Echoes +1500 - (6) Gain Blood Echoes +1800",
         "num-held": "- / 99",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -218,15 +218,15 @@
     {
         "name": "Frenzied Coldblood (7), (8), (9)",
         "link": "http://www.bloodborne-wiki.com/2015/03/frenzied-coldblood.html",
-        "effect": "(7) Gain Blood Echoes +2000(8) Gain Blood Echoes +3000(9) Gain Blood Echoes +5000",
+        "effect": "(7) Gain Blood Echoes +2000 - (8) Gain Blood Echoes +3000 - (9) Gain Blood Echoes +5000",
         "num-held": "- / 99",
         "stored": "- / 99",
         "usage-type": "Finite"
     },
     {
-        "name": "Kin Coldblood(10), (11), (12)",
+        "name": "Kin Coldblood (10), (11), (12)",
         "link": "http://www.bloodborne-wiki.com/2015/03/kin-coldblood.html",
-        "effect": "(10) Gain Blood Echoes +8000(11) Gain Blood Echoes +10000(12) Gain Blood Echoes +20000",
+        "effect": "(10) Gain Blood Echoes +8000 - (11) Gain Blood Echoes +10000 - (12) Gain Blood Echoes +20000",
         "num-held": "- / 99",
         "stored": "- / 99",
         "usage-type": "Finite"
@@ -258,7 +258,7 @@
     {
         "name": "Blood Dreg",
         "link": "http://www.bloodborne-wiki.com/2015/04/blood-dreg.html",
-        "effect": "Gain +1 InsightOffer to Annalise",
+        "effect": "Gain +1 Insight - Offer to Annalise",
         "num-held": "- / 99",
         "stored": "- / 99",
         "usage-type": "Finite"

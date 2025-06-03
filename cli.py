@@ -44,10 +44,12 @@ def search_by_name(data, name_key="name"):
     whose 'name' field contains the query (case-insensitive).
     Prints a numbered list of matching entries.
     """
-    query = input("Enter name to search: ").lower()
+    query = input("Enter name to search (leave blank to list all): ").lower()
+    if not query:
+        return data
     results = [d for d in data if query in d.get(name_key, "").lower()]
     for i, entry in enumerate(results):
-        print(f"{i+1}. {entry.get(name_key, '')}")
+        print(f"{i+1}. {entry.get(name_key, entry.get('set', 'No Name'))}")
     return results
 
 def show_details(results, model_cls):
@@ -124,6 +126,36 @@ def advanced_filter(weapons, armor, bosses, items, npcs):
     else:
         print("No results found.")
 
+def list_all(data, model_cls, name_key="name", page_size=10):
+    """
+    Lists all entries in the data with pagination.
+    """
+    total = len(data)
+    if total == 0:
+        print("No data available.")
+        return
+    page = 0
+    while True:
+        start = page * page_size
+        end = min(start + page_size, total)
+        for i, entry in enumerate(data[start:end], start=1+start):
+            print(f"{i}. {entry.get(name_key, entry.get('set', 'No Name'))}")
+        print(f"Showing {start+1}-{end} of {total}. (n: next, p: previous, entity # to view, q: quit)")
+        cmd = input("Command: ").strip().lower()
+        if cmd == "n" and end < total:
+            page += 1
+        elif cmd == "p" and page > 0:
+            page -= 1
+        elif cmd.isdigit():
+            idx = int(cmd) - 1
+            if 0 <= idx < total:
+                obj = model_cls.from_dict(data[idx])
+                obj.display_info()
+        elif cmd == "q":
+            break
+        else:
+            print("Invalid command.")
+
 def main_menu():
     """
     Main CLI loop. Presents the user with options to search, filter, display,
@@ -134,8 +166,23 @@ def main_menu():
     last_results = []
     last_model_cls = None
 
+    menu_options = {
+        "1": lambda: handle_search(weapons, Weapon, "name"),
+        "2": lambda: handle_search(armor, Armor, "set"),
+        "3": lambda: handle_search(bosses, Boss, "name"),
+        "4": lambda: handle_search(items, Item, "name"),
+        "5": lambda: handle_search(npcs, NPC, "name"),
+        "6": lambda: export_results(last_results, "filtered_results", data_handler),
+        "7": lambda: advanced_filter(weapons, armor, bosses, items, npcs),
+        "8": lambda: list_all(weapons, Weapon, "name"),
+        "9": lambda: list_all(armor, Armor, "set"),
+        "10": lambda: list_all(bosses, Boss, "name"),
+        "11": lambda: list_all(items, Item, "name"),
+        "12": lambda: list_all(npcs, NPC, "name"),
+    }
+
     while True:
-        print("\nBloodborne Data CLI")
+        print("\nBloodborne Data CLI: Search and Explore Bloodborne Entities")
         print("1. Search Weapons")
         print("2. Search Armor")
         print("3. Search Bosses")
@@ -143,41 +190,33 @@ def main_menu():
         print("5. Search NPCs")
         print("6. Export Last Search Results")
         print("7. Advanced Filter/Search")
-        print("8. Exit")
+        print("8. List All Weapons")
+        print("9. List All Armor")
+        print("10. List All Bosses")
+        print("11. List All Consumables")
+        print("12. List All NPCs")
+        print("13. Exit")
         choice = input("Choose an option: ")
 
-        if choice == "1":
-            last_results = search_by_name(weapons)
-            last_model_cls = Weapon
-            show_details(last_results, Weapon)
-        elif choice == "2":
-            last_results = search_by_name(armor)
-            last_model_cls = Armor
-            show_details(last_results, Armor)
-        elif choice == "3":
-            last_results = search_by_name(bosses)
-            last_model_cls = Boss
-            show_details(last_results, Boss)
-        elif choice == "4":
-            last_results = search_by_name(items)
-            last_model_cls = Item
-            show_details(last_results, Item)
-        elif choice == "5":
-            last_results = search_by_name(npcs)
-            last_model_cls = NPC
-            show_details(last_results, NPC)
-        elif choice == "6":
-            if last_results:
-                export_results(last_results, "filtered_results", data_handler)
-            else:
-                print("No previous search results to export.")
-        elif choice == "7":
-            advanced_filter(weapons, armor, bosses, items, npcs)
-        elif choice == "8":
+        if choice == "13":
             print("Goodbye!")
             break
+        elif choice in menu_options:
+            result = menu_options[choice]()
+            # Update last_results and last_model_cls if a search was performed
+            if choice in {"1", "2", "3", "4", "5"} and result:
+                last_results, last_model_cls = result
         else:
             print("Invalid choice.")
+
+def handle_search(data, model_cls, name_key="name"):
+    """
+    Handles searching by name for a given entity type.
+    Returns the search results and the model class.
+    """
+    results = search_by_name(data, name_key=name_key)
+    show_details(results, model_cls)
+    return results, model_cls
 
 if __name__ == "__main__":
     main_menu()

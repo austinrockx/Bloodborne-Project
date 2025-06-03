@@ -1,14 +1,14 @@
 name,link,effect,num-held,stored,usage-type
 Antidote,http://www.bloodborne-wiki.com/2015/03/antidote.html,Remove poison build-up and heal the slow-poisoning status,- / 10,- / 99,Finite
-Beast Blood Pellet,http://www.bloodborne-wiki.com/2015/03/beast-blood-pellet.html,Increase ATK powerDecrease DEF [60 seconds],- / 10,- / 99,Finite
-Blood of Adella,http://www.bloodborne-wiki.com/2015/03/blood-of-adella.html,Heal 25% of HPGradual heal [20 seconds],- / 1,- / -,Finite
-Blood of Arianna,http://www.bloodborne-wiki.com/2015/03/blood-of-arianna.html,Heal 25% of HPIncrease stamina regeneration [20 seconds],- / 1,- / -,Finite
+Beast Blood Pellet,http://www.bloodborne-wiki.com/2015/03/beast-blood-pellet.html,Increase ATK power - Decrease DEF [60 seconds],- / 10,- / 99,Finite
+Blood of Adella,http://www.bloodborne-wiki.com/2015/03/blood-of-adella.html,Heal 25% of HP - Gradual heal [20 seconds],- / 1,- / -,Finite
+Blood of Arianna,http://www.bloodborne-wiki.com/2015/03/blood-of-arianna.html,Heal 25% of HP - Increase stamina regeneration [20 seconds],- / 1,- / -,Finite
 Blood Vial,http://www.bloodborne-wiki.com/2015/03/blood-vial.html,Heal 40% of HP,- / 20,- / 600,Finite
 Great One's Wisdom,http://www.bloodborne-wiki.com/2015/03/great-ones-wisdom.html,Gain +2 Insight,- / 99,- / 99,Finite
 Iosefka's Blood Vial,http://www.bloodborne-wiki.com/2015/03/iosefkas-blood-vial.html,Restore 70% of HP,- / 1,- / -,Finite
 Madman's Knowledge,http://www.bloodborne-wiki.com/2015/03/madmans-knowledge.html,Gain +1 Insight,- / 99,- / 99,Finite
-Sedative,http://www.bloodborne-wiki.com/2015/03/sedative.html,Removes Frenzy build-upRemoves Beasthood build-up,- / 10,- / 99,Finite
-Third Umbilical Cord,http://www.bloodborne-wiki.com/2015/03/third-umbilical-cord.html,Gain +3 InsightUnlocks true final boss,- / 1,- / -,Finite
+Sedative,http://www.bloodborne-wiki.com/2015/03/sedative.html,Removes Frenzy build-up - Removes Beasthood build-up,- / 10,- / 99,Finite
+Third Umbilical Cord,http://www.bloodborne-wiki.com/2015/03/third-umbilical-cord.html,Gain +3 Insight - Unlocks true final boss,- / 1,- / -,Finite
 Blood of AdelineDLC,http://www.bloodborne-wiki.com/2015/11/blood-of-adeline.html,Restore 50% of total HP and gradually heal for 10 seconds,- / 1,- / -,Finite
 Bolt Paper,http://www.bloodborne-wiki.com/2015/03/bolt-paper.html,Add 80 Bolt DMG to every ATK [right-hand weapons],- / 10,- / 99,Finite
 Bone Marrow Ash,http://www.bloodborne-wiki.com/2015/03/bone-marrow-ash.html,Increase power of QS Bullet [Left-Hand Firearms][1 Shot / 60 seconds],- / 10,- / 99,Finite
@@ -24,14 +24,14 @@ Shaman Bone Blade,http://www.bloodborne-wiki.com/2015/03/shaman-bone-blade.html,
 Throwing Knife,http://www.bloodborne-wiki.com/2015/03/throwing-knife.html,Deal Phys. DMG and 20 Armor DMG,- / 20,- / 99,Finite
 Delayed MolotovDLC,http://www.bloodborne-wiki.com/2015/11/delayed-molotov.html,Fire DMG / 20 Armor DMG,- / 10,- / 99,Finite
 Delayed Rope MolotovDLC,http://www.bloodborne-wiki.com/2015/11/delayed-rope-molotov.html,Fire DMG / 20 Armor DMG[thrown behind],- / 10,- / 99,Finite
-"Coldblood Dew(1), (2), (3)",http://www.bloodborne-wiki.com/2015/03/coldblood-dew.html,(1) Gain Blood Echoes +350(2) Gain Blood Echoes +500(3) Gain Blood Echoes +1000,- / 99,- / 99,Finite
-"Thick Coldblood(4), (5), (6)",http://www.bloodborne-wiki.com/2015/03/thick-coldblood.html,(4) Gain Blood Echoes +1200(5) Gain Blood Echoes +1500(6) Gain Blood Echoes +1800,- / 99,- / 99,Finite
-"Frenzied Coldblood (7), (8), (9)",http://www.bloodborne-wiki.com/2015/03/frenzied-coldblood.html,(7) Gain Blood Echoes +2000(8) Gain Blood Echoes +3000(9) Gain Blood Echoes +5000,- / 99,- / 99,Finite
-"Kin Coldblood(10), (11), (12)",http://www.bloodborne-wiki.com/2015/03/kin-coldblood.html,(10) Gain Blood Echoes +8000(11) Gain Blood Echoes +10000(12) Gain Blood Echoes +20000,- / 99,- / 99,Finite
+"Coldblood Dew(1), (2), (3)",http://www.bloodborne-wiki.com/2015/03/coldblood-dew.html,(1) Gain Blood Echoes +350 - (2) Gain Blood Echoes +500 - (3) Gain Blood Echoes +1000,- / 99,- / 99,Finite
+"Thick Coldblood(4), (5), (6)",http://www.bloodborne-wiki.com/2015/03/thick-coldblood.html,(4) Gain Blood Echoes +1200 - (5) Gain Blood Echoes +1500 - (6) Gain Blood Echoes +1800,- / 99,- / 99,Finite
+"Frenzied Coldblood (7), (8), (9)",http://www.bloodborne-wiki.com/2015/03/frenzied-coldblood.html,(7) Gain Blood Echoes +2000 - (8) Gain Blood Echoes +3000 - (9) Gain Blood Echoes +5000,- / 99,- / 99,Finite
+"Kin Coldblood(10), (11), (12)",http://www.bloodborne-wiki.com/2015/03/kin-coldblood.html,(10) Gain Blood Echoes +8000 - (11) Gain Blood Echoes +10000 - (12) Gain Blood Echoes +20000,- / 99,- / 99,Finite
 Great One Coldblood,http://www.bloodborne-wiki.com/2015/04/great-one-coldblood.html,Gain Blood Echoes +40000,- / 99,- / 99,Finite
 Old Great One Coldblood,http://www.bloodborne-wiki.com/2015/08/old-great-one-coldblood.html,Gain Blood Echoes +50000,- / 99,- / 99,Finite
 Revered Great One Coldblood,http://www.bloodborne-wiki.com/2017/05/revered-great-one-coldblood.html,Gain Blood Echoes +100000,- / 99,- / 99,Finite
-Blood Dreg,http://www.bloodborne-wiki.com/2015/04/blood-dreg.html,Gain +1 InsightOffer to Annalise,- / 99,- / 99,Finite
+Blood Dreg,http://www.bloodborne-wiki.com/2015/04/blood-dreg.html,Gain +1 Insight - Offer to Annalise,- / 99,- / 99,Finite
 Blue Elixir,http://www.bloodborne-wiki.com/2015/03/blue-elixir.html,Harder to detect by enemies [30 seconds],- / 10,- / 99,Finite
 Bold Hunter's Mark,http://www.bloodborne-wiki.com/2015/03/bold-hunters-mark.html,"Return to last rested Lamp [takes ~3 seconds], Lose no Blood Echoes",- / 99,- / 99,Finite
 Gold Pendant,http://www.bloodborne-wiki.com/2015/03/gold-pendant.html,Obtain Gold Blood Gem [radial],- / 1,- / 1,Finite
