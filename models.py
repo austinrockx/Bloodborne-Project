@@ -32,7 +32,9 @@ class Weapon:
 
     def display_info(self):
         # Print a summary of the weapon's key stats
+        print("\n" + "="*10)
         print(f"Weapon: {self.name} | Base Damage: {self.base_damage} ({self.damage_type}) | Stats Needed: {self.stats_needed}")
+        print("\n" + "="*10)
 
     @classmethod
     def from_dict(cls, data):
@@ -66,7 +68,9 @@ class Armor:
 
     def display_info(self):
         # Print a summary of the armor set's key stats
+        print("\n" + "="*10)
         print(f"Armor Set: {self.set} | Physical Defense: {self.physical_defense}, {self.blunt_defense}, {self.thrust_defense}, {self.blood_defense} | Elemental Defense: {self.arcane_defense}, {self.fire_defense}, {self.bolt_defense} | Resistances: {self.slow_poison_resist}, {self.rapid_poison_resist}, {self.frenzy_resist} | Beasthood: {self.beasthood}")
+        print("\n" + "="*10)
 
     @classmethod
     def from_dict(cls, data):
@@ -99,7 +103,9 @@ class Boss:
 
     def display_info(self):
         # Print a summary of the boss's key stats
+        print("\n" + "="*10)
         print(f"Boss: {self.name} | Drops: {self.drops} | HP: {self.HP} | Blood Echoes: {self.blood_echoes} | Location: {self.location} | Required: {self.required}")
+        print("\n" + "="*10)
 
     @classmethod
     def from_dict(cls, data):
@@ -125,7 +131,9 @@ class NPC:
 
     def display_info(self):
         # Print a summary of the NPC's key stats
+        print("\n" + "="*10)
         print(f"NPC: {self.name} | Location: {self.location} | Timezones: {self.timezones}")
+        print("\n" + "="*10)
 
     @classmethod
     def from_dict(cls, data):
@@ -150,7 +158,9 @@ class Item:
 
     def display_info(self):
         # Print a summary of the item's key stats
+        print("\n" + "="*10)
         print(f"Item: {self.name} | Effect: {self.effect} | No. Held: {self.num_held} | Stored: {self.stored} | Usage Type: {self.usage_type}")
+        print("\n" + "="*10)
 
     @classmethod
     def from_dict(cls, data):

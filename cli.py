@@ -24,6 +24,8 @@ from models import Weapon, Armor, Boss, NPC, Item # Import data models
 from data_handler import DataHandler # Import data handling utilities
 from scraper import BloodborneScraper # Import the scraper for Bloodborne data
 from collections import Counter # Import Counter for counting occurrences in data
+from colorama import Fore, Style, init # Import colorama for colored terminal output
+init(autoreset=True) # Initialize colorama to reset colors automatically
 
 def load_data():
     """
@@ -69,6 +71,27 @@ def show_details(results, model_cls):
             print("Invalid selection.")
     except ValueError:
         print("Please enter a valid number.")
+def show_statistics(weapons, armor, bosses, items, npcs):
+    """
+    Displays summary statistics for each entity type.
+    """
+    print("\nBloodborne Data Summary Statistics")
+    print("="*30)
+    print(f"Total Weapons: {len(weapons)}")
+    if weapons:
+        from collections import Counter
+        dmg_types = [w.get("damage_type", w.get("damage-type", "Unknown")) for w in weapons]
+        most_common = Counter(dmg_types).most_common(1)
+        if most_common:
+            print(f"Most common weapon damage type: {most_common[0][0]} ({most_common[0][1]})")
+    print(f"Total Armor Sets: {len(armor)}")
+    print(f"Total Bosses: {len(bosses)}")
+    if bosses:
+        max_hp = max(bosses, key=lambda b: int(b.get("HP", "0").replace(",", "") or 0))
+        print(f"Boss with highest HP: {max_hp.get('name', 'Unknown')} ({max_hp.get('HP', 'N/A')})")
+    print(f"Total Consumables: {len(items)}")
+    print(f"Total NPCs: {len(npcs)}")
+    print("="*30)
 
 def export_results(results, filename, data_handler):
     """
@@ -156,6 +179,28 @@ def list_all(data, model_cls, name_key="name", page_size=10):
         else:
             print("Invalid command.")
 
+def show_help():
+    """
+    Displays help and information about the CLI and Bloodborne entities.
+    """
+    print("\nBloodborne CLI Help")
+    print("="*20)
+    print("This CLI lets you explore data from the Bloodborne Wiki.")
+    print("You can search, filter, list, and export information about:")
+    print("- Weapons: Tools for combat, each with unique stats and effects.")
+    print("- Armor: Protective gear with various resistances.")
+    print("- Bosses: Major enemies with unique drops and locations.")
+    print("- Consumables: Usable items with effects.")
+    print("- NPCs: Non-player characters with roles in the world.\n")
+    print("Menu Options:")
+    print(" - Search: Find entries by name.")
+    print(" - List All: Browse all entries with paging.")
+    print(" - Advanced Filter: Filter by any field.")
+    print(" - Export: Save your search/filter results.")
+    print(" - Statistics: View summary stats for each entity type.")
+    print(" - Help: Show this help screen.")
+    print("="*20)
+
 def main_menu():
     """
     Main CLI loop. Presents the user with options to search, filter, display,
@@ -179,6 +224,8 @@ def main_menu():
         "10": lambda: list_all(bosses, Boss, "name"),
         "11": lambda: list_all(items, Item, "name"),
         "12": lambda: list_all(npcs, NPC, "name"),
+        "13": show_help,
+        "14": lambda: show_statistics(weapons, armor, bosses, items, npcs),
     }
 
     while True:
@@ -195,10 +242,17 @@ def main_menu():
         print("10. List All Bosses")
         print("11. List All Consumables")
         print("12. List All NPCs")
-        print("13. Exit")
+        print("13. Help/Info")
+        print("14. Summary Statistics")
+        print("15. Exit")
         choice = input("Choose an option: ")
+        print("\n" + "="*10)
 
         if choice == "13":
+            show_help()
+        elif choice == "14":
+            show_statistics(weapons, armor, bosses, items, npcs)
+        elif choice == "15":
             print("Goodbye!")
             break
         elif choice in menu_options:
