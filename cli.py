@@ -183,23 +183,26 @@ def show_help():
     """
     Displays help and information about the CLI and Bloodborne entities.
     """
-    print("\nBloodborne CLI Help")
-    print("="*20)
-    print("This CLI lets you explore data from the Bloodborne Wiki.")
-    print("You can search, filter, list, and export information about:")
-    print("- Weapons: Tools for combat, each with unique stats and effects.")
-    print("- Armor: Protective gear with various resistances.")
-    print("- Bosses: Major enemies with unique drops and locations.")
-    print("- Consumables: Usable items with effects.")
-    print("- NPCs: Non-player characters with roles in the world.\n")
-    print("Menu Options:")
-    print(" - Search: Find entries by name.")
-    print(" - List All: Browse all entries with paging.")
-    print(" - Advanced Filter: Filter by any field.")
-    print(" - Export: Save your search/filter results.")
-    print(" - Statistics: View summary stats for each entity type.")
-    print(" - Help: Show this help screen.")
-    print("="*20)
+    help_text = (
+        f"\nBloodborne CLI Help\n"
+        f"\n{'='*20}"
+        f"\nThis CLI lets you explore data from the Bloodborne Wiki.\n"
+        f"\nYou can search, filter, list, and export information about:\n"
+        f"- Weapons: Tools for combat, each with unique stats and effects.\n"
+        f"- Armor: Protective gear with various resistances.\n"
+        f"- Bosses: Major enemies with unique drops and locations.\n"
+        f"- Consumables: Usable items with effects.\n"
+        f"- NPCs: Non-player characters with roles in the world.\n"
+        f"\nMenu Options:\n"
+        f" - Search: Find entries by name.\n"
+        f" - List All: Browse all entries with paging.\n"
+        f" - Advanced Filter: Filter by any field.\n"
+        f" - Export: Save your search/filter results.\n"
+        f" - Statistics: View summary stats for each entity type.\n"
+        f" - Help: Show this help screen.\n"
+        f"\n{'='*20}"
+    )
+    print(Fore.LIGHTMAGENTA_EX + help_text + Style.RESET_ALL)
 
 def main_menu():
     """
@@ -229,24 +232,27 @@ def main_menu():
     }
 
     while True:
-        print("\nBloodborne Data CLI: Search and Explore Bloodborne Entities")
-        print("1. Search Weapons")
-        print("2. Search Armor")
-        print("3. Search Bosses")
-        print("4. Search Consumables")
-        print("5. Search NPCs")
-        print("6. Export Last Search Results")
-        print("7. Advanced Filter/Search")
-        print("8. List All Weapons")
-        print("9. List All Armor")
-        print("10. List All Bosses")
-        print("11. List All Consumables")
-        print("12. List All NPCs")
-        print("13. Help/Info")
-        print("14. Summary Statistics")
-        print("15. Exit")
+        
+        menu_text = (
+        f"\nBloodborne Data CLI: Search and Explore Bloodborne Entities\n"
+        f"1. Search Weapons\n"
+        f"2. Search Armor\n"
+        f"3. Search Bosses\n"
+        f"4. Search Consumables\n"
+        f"5. Search NPCs\n"
+        f"6. Export Last Search Results\n"
+        f"7. Advanced Filter/Search\n"
+        f"8. List All Weapons\n"
+        f"9. List All Armor\n"
+        f"10. List All Bosses\n"
+        f"11. List All Consumables\n"
+        f"12. List All NPCs\n"
+        f"13. Help/Info\n"
+        f"14. Summary Statistics\n"
+        f"15. Exit\n"
+    )
+        print(Fore.LIGHTMAGENTA_EX + menu_text + Style.RESET_ALL)
         choice = input("Choose an option: ")
-        print("\n" + "="*10)
 
         if choice == "13":
             show_help()

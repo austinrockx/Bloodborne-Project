@@ -18,6 +18,8 @@ Date: 2025-05-23
 """
 
 from dataclasses import dataclass # Import dataclass decorator for concise class definitions
+from colorama import Fore, Style, init # Import colorama for colored terminal output
+init(autoreset=True) # Automatically reset color after each print
 
 @dataclass
 class Weapon:
@@ -31,10 +33,17 @@ class Weapon:
     special_attack: str
 
     def display_info(self):
-        # Print a summary of the weapon's key stats
-        print("\n" + "="*10)
-        print(f"Weapon: {self.name} | Base Damage: {self.base_damage} ({self.damage_type}) | Stats Needed: {self.stats_needed}")
-        print("\n" + "="*10)
+        info = (
+        f"\n{'='*10}\n"
+        f"Weapon: {self.name}\n"
+        f"Base Damage: {self.base_damage} ({self.damage_type})\n"
+        f"Durability: {self.durability}\n"
+        f"Stats Needed: {self.stats_needed}\n"
+        f"Stat Bonuses: {self.stat_bonuses}\n"
+        f"Special Attack: {self.special_attack}\n"
+        f"{'='*10}"
+        )
+        print(Fore.CYAN + info + Style.RESET_ALL)
 
     @classmethod
     def from_dict(cls, data):
@@ -68,9 +77,16 @@ class Armor:
 
     def display_info(self):
         # Print a summary of the armor set's key stats
-        print("\n" + "="*10)
-        print(f"Armor Set: {self.set} | Physical Defense: {self.physical_defense}, {self.blunt_defense}, {self.thrust_defense}, {self.blood_defense} | Elemental Defense: {self.arcane_defense}, {self.fire_defense}, {self.bolt_defense} | Resistances: {self.slow_poison_resist}, {self.rapid_poison_resist}, {self.frenzy_resist} | Beasthood: {self.beasthood}")
-        print("\n" + "="*10)
+        info = (
+        f"\n{'='*10}\n"
+        f"Armor Set: {self.set}\n"
+        f"Physical Defenses: {self.physical_defense}, {self.blunt_defense}, {self.thrust_defense}, {self.blood_defense}\n"
+        f"Elemenatl Defenses: {self.arcane_defense}, {self.fire_defense}, {self.bolt_defense}\n"
+        f"Resistances: {self.slow_poison_resist}, {self.rapid_poison_resist}, {self.frenzy_resist}\n"
+        f"Beasthood: {self.beasthood}\n"
+        f"{'='*10}"
+        )
+        print(Fore.YELLOW + info + Style.RESET_ALL)
 
     @classmethod
     def from_dict(cls, data):
@@ -103,9 +119,17 @@ class Boss:
 
     def display_info(self):
         # Print a summary of the boss's key stats
-        print("\n" + "="*10)
-        print(f"Boss: {self.name} | Drops: {self.drops} | HP: {self.HP} | Blood Echoes: {self.blood_echoes} | Location: {self.location} | Required: {self.required}")
-        print("\n" + "="*10)
+        info = (
+        f"\n{'='*10}\n"
+        f"Boss Name: {self.name}\n"
+        f"Drops: {self.drops}\n"
+        f"HP: {self.HP}\n"
+        f"Blood Echoes: {self.blood_echoes}\n"
+        f"Location: {self.location}\n"
+        f"Required: {self.required}\n"
+        f"{'='*10}"
+        )
+        print(Fore.LIGHTGREEN_EX + info + Style.RESET_ALL)
 
     @classmethod
     def from_dict(cls, data):
@@ -131,9 +155,14 @@ class NPC:
 
     def display_info(self):
         # Print a summary of the NPC's key stats
-        print("\n" + "="*10)
-        print(f"NPC: {self.name} | Location: {self.location} | Timezones: {self.timezones}")
-        print("\n" + "="*10)
+        info = (
+        f"\n{'='*10}\n"
+        f"NPC Name: {self.name}\n"
+        f"Location: {self.location}\n"
+        f"Timezones: {self.timezones}\n"
+        f"{'='*10}"
+        )
+        print(Fore.LIGHTRED_EX + info + Style.RESET_ALL)
 
     @classmethod
     def from_dict(cls, data):
@@ -158,9 +187,16 @@ class Item:
 
     def display_info(self):
         # Print a summary of the item's key stats
-        print("\n" + "="*10)
-        print(f"Item: {self.name} | Effect: {self.effect} | No. Held: {self.num_held} | Stored: {self.stored} | Usage Type: {self.usage_type}")
-        print("\n" + "="*10)
+        info = (
+        f"\n{'='*10}\n"
+        f"Boss Name: {self.name}\n"
+        f"Effect: {self.effect}\n"
+        f"No. Held: {self.num_held}\n"
+        f"Stored: {self.stored}\n"
+        f"Usage Type: {self.usage_type}\n"
+        f"{'='*10}"
+        )
+        print(Fore.LIGHTYELLOW_EX + info + Style.RESET_ALL)
 
     @classmethod
     def from_dict(cls, data):
